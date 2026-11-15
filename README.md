@@ -6,6 +6,10 @@ This repository contains all the necessary files to create bootable image, such 
 
 As USB Gadget Ethernet(g_ether) is enabled in the Linux kernel settings, allowing Lichee Pi Nano to connect to internet via the host PC. In other words, with a single USB cable, you can turn Lichee Pi Nano into a tiny internet terminal, allowing you to log in via ssh to debug or run network applications.
 
+## Changes in this fork
+
+This fork just modifies the default docker environment to work with OSX containers. It has a few tweaks to the build script around resources that need to be different, and a slightly different way of mounting the buildroot into the container. 
+
 ## Requirements
 
 - Docker installed PC(tested only on Linux hosts, not Mac or Windows)
