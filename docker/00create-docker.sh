@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t br-build:latest --build-arg UID=$UID --build-arg USERNAME=$USER -f Dockerfile .
+container build -t br-build:latest --build-arg UID=$UID --build-arg USERNAME=$USER --progress=plain -f Dockerfile .

@@ -1,7 +1,4 @@
 #!/bin/bash
-docker run --user $(id -u) --ipc=host --rm -it \
-  -v $PWD/:/workdir/work \
-  br-build \
-  /workdir/br-build.sh
 
+container run --user $(id -u) --memory 4g --cpus 8 --rm -it  -v $PWD/:/workdir/work br-build /workdir/br-build.sh
 
